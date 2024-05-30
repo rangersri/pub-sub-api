@@ -16,7 +16,6 @@ import certifi
 import grpc
 import requests
 
-import getlogin as g1
 import pubsub_api_pb2 as pb2
 import pubsub_api_pb2_grpc as pb2_grpc
 from urllib.parse import urlparse
@@ -33,6 +32,7 @@ def get_argument(key, argument_dict):
         return argument_dict[key]
     else:
         return properties.get(key)
+
 
 class PubSub(object):
     """
